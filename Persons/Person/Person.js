@@ -16,8 +16,16 @@ class Person extends Component {
     console.log('[Person.js] Inside componentDidMount()');
   }
 
+
+  componentWillUpdate(nextProps, nextState) {
+    console.log('[UPDATE Person.js] Inside componentWillUpdate', nextProps, nextState);
+  }
+  componentDidUpdate() {
+    console.log('[UPDATE Person.js] Inside componentDidUpdate');
+  }
+
   render() {
-    console.log('[Person.js] Inside render()');
+    console.log('[Person.js] Inside render() aa');
     return (
       <div className={classes.Person}>
         <p onClick={this.props.click}>I'm {this.props.name} and I am {this.props.age} years old!</p>
