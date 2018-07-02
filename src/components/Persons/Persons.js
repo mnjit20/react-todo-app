@@ -29,7 +29,6 @@ class Persons extends Component {
         console.log('[UPDATE Persons.js] Inside componentWillUpdate', nextProps, nextState);
     }
 
-
     componentDidUpdate() {
         console.log('[UPDATE Persons.js] Inside componentDidUpdate');
     }
